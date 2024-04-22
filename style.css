@@ -1,8 +1,29 @@
 body{
     margin: 0;
-    font-family: sans-serif;
-     display: flex;
-     align-items: center;
-     height:100vh;
-     font-size: 40px;
+    background-image: url(backgroundimage.jpg);
+    height: 2000px;
+}
+div{
+    background-color:gray;
+    min-height: 400px;
+    max-width: 700px;
+    overflow: auto;
+}
+#section-1{
+    position: absolute;
+    left: 800px;
+    max-width: 400px;
+    min-height: 400px;
+    background-color: blueviolet;
+}
+h1{
+    position: relative;
+    top:15px;
+    left: 15px;
+}
+.section-2{
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    background-color: brown;
 }
