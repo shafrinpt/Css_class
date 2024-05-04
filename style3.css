@@ -1,0 +1,127 @@
+body{
+    margin:0;
+}
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(4,224,188);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.loader-container > div{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.loader-1{
+ animation:loader 0.6s linear 0.1s infinite;
+}
+.loader-2{
+ animation:loader 0.6s linear 0.2s infinite;
+}
+.loader-3{
+ animation:loader 0.6s linear 0.3s infinite;
+}
+
+
+@keyframes loader{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.box{
+    width:100px;
+    height: 100px;
+    background-color: blue;
+}
+.box:hover{
+    animation-name:animate-background;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate-background{
+    0%{
+        background-color: orange;
+    }
+    50%{
+        background-color: brown;
+    }
+    100%{
+        background-color: yellow;
+    }
+
+}
+.container-1{
+    max-width:700px;
+    background-color: pink;
+    padding: 20px;
+}
+.inner-div{
+  width: 100px;
+  height: 100px;
+  background-color: plum;
+  position: relative;
+  top: 0;
+}
+.container-1:hover .inner-div{
+    animation-name: move-to-right;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes move-to-right{
+    0%{
+        top:0%;
+        left:0%;
+    }
+    100%{
+        top:0%;
+        left:85%;
+    }
+}
+
+.squares{
+    max-width: 700px;
+    background-color: pink;
+}
+.squares > div{
+    width: 100px;
+    border: 1px solid black;
+    background-color: orange;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+.squares:hover div{
+    animation-name: move-to-right;
+    animation-duration: 5s;
+}
+@keyframes move-to-right{
+    0%{
+        left:0;
+
+    }
+    100%{
+        right:85%;
+    }
+
+
+
+}
+
+
+d
